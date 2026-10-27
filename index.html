@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>じゃんけんアプリ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1 id="ti">じゃんけんアプリ</h1>
+
+  <p id="message">じゃんけんをしよう！</p>
+
+  <img src="text_start.png" id="start" alt="スタート">
+
+  <!-- 最初はグーの画像 -->
+  <div id="first" hidden>
+    <img src="janken_gu.png" alt="グー">
+  </div>
+
+
+  <!-- 自分が出す手 -->
+  <div class="janken" id="hands" hidden>
+    <h3>あなたの手を選んでね！</h3>
+
+    <img src="janken_gu.png" class="hand"
+         data-hand="グー" alt="グー">
+
+    <img src="janken_choki.png" class="hand"
+         data-hand="チョキ" alt="チョキ">
+
+    <img src="janken_pa.png" class="hand"
+         data-hand="パー" alt="パー">
+  </div>
+
+  <!-- じゃんけんの結果 -->
+  <div id="battle" hidden>
+    <div class="players" hidden>
+      <div>
+        <p>あなた</p>
+        <img id="myImage" src="janken_gu.png" alt="あなたの手" >
+      </div>
+
+      <div>
+        <p>相手</p>
+        <img id="computerImage" src="janken_gu.png" alt="相手の手" >
+      </div>
+    </div>
+  </div>
+
+  <p id="result"></p>
+
+  <button id="retry" hidden>もう一度じゃんけん！</button>
+
+  <br>
+  
+  <button id="retitle" hidden>タイトルに戻る</button>
+
+  <div id = "count" hidden>
+   <div class="total" hidden>
+    <div>
+    <p>勝ちの回数</p>
+    <p id="wincountapp">0</p>
+    </div>
+
+  <div>
+    <p>負けの回数</p>
+    <p id = "losecountapp">0</p>
+  </div>
+
+  <div>
+  <p>あいこの回数</p>
+  <p id = "drawcountapp">0</p>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
