@@ -1,0 +1,118 @@
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #fffaf0;
+  padding: 20px;
+}
+
+#ti {
+  color: #333;
+  font-size: 32px;
+    font-weight: bold;
+    padding: 12px 0;
+    border-top: 3px solid #6C757D;
+    border-bottom: 3px solid #6C757D;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+#message {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+/* スタート画像 */
+#start {
+  width: 180px;
+  cursor: pointer;
+}
+
+#start:hover {
+  transform: scale(1.1);
+}
+
+/* 最初はグーの画像 */
+#first img {
+  width: 140px;
+}
+
+/* 自分が選ぶ手 */
+.janken {
+  margin-top: 20px;
+}
+
+.hand {
+  width: 120px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.hand:hover {
+  transform: scale(1.1);
+}
+
+/* 自分と相手の画像 */
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.players img {
+  width: 140px;
+  max-width: 35vw;
+}
+
+.players p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 結果 */
+#result {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 25px;
+  white-space: pre-line;
+}
+
+/* もう一度ボタン */
+#retry {
+  font-size: 20px;
+  padding: 12px 24px;
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #87ceeb;
+  cursor: pointer;
+}
+
+/* タイトルにもどる */
+#retitle {
+  font-size: 20px;
+  padding: 12px 24px;
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #87ceeb;
+  cursor: pointer;
+}
+
+#retry:hover {
+  opacity: 0.8;
+}
+
+#retitle:hover {
+  opacity: 0.8;
+}
+
+.total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
